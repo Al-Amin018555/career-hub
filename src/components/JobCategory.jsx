@@ -10,7 +10,7 @@ const JobCategory = () => {
     }, [])
     return (
         <div className="max-w-screen-xl mx-auto my-[20px] md:my-[130px]">
-            <div className="space-y-2 text-center">
+            <div className="space-y-4 text-center">
                 <h2 className="text-2xl md:text-5xl font-extrabold">Job Category List</h2>
                 <p className="text-[#757575] font-medium">Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
