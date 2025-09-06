@@ -4,7 +4,7 @@ import instagram from "../assets/icons/icons8-insta.gif";
 const Footer = () => {
     return (
         <div>
-            <footer className="text-white bg-[#1A1919] p-10 border-b-red-700">
+            <footer className="text-white mt-20 bg-[#1A1919] p-10 border-b-red-700">
                 <div className="footer max-w-screen-xl mx-auto sm:footer-horizontal">
                     <nav className="space-y-5">
                         <h1 className="text-white text-3xl font-extrabold">CareerHub</h1>
