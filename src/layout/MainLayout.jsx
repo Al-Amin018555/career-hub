@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const MainLayout = () => {
     return (
         <div>
-            <div className='h-[68px]'>
+            <div className='h-[65px] sticky top-0 z-10'>
                 <Navbar></Navbar>
             </div>
             <div className="min-h-[calc(100vh-262px)] mx-auto">
