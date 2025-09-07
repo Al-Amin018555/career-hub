@@ -1,8 +1,9 @@
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineAttachMoney } from "react-icons/md";
 
-const Job = ({ job }) => {
+const Job = ({ job, setJobDetails }) => {
     const { logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = job;
+    console.log(setJobDetails)
 
     return (
 
@@ -28,7 +29,7 @@ const Job = ({ job }) => {
                 </div>
 
                 <div className="justify-start card-actions">
-                    <button className="btn py-5 rounded-lg px-4 text-white bg-gradient-to-r from-blue-500 to-purple-500">View Details</button>
+                    <button onClick={() => setJobDetails(true)} className="btn py-5 rounded-lg px-4 text-white bg-gradient-to-r from-blue-500 to-purple-500">View Details</button>
                 </div>
             </div>
         </div>
