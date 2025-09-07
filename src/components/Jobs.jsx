@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Job from "./Job";
 
-const Jobs = ({setJobDetails}) => {
+const Jobs = ({ setJobDetails, handleJobDetails }) => {
     const [Jobs, setJobs] = useState([]);
     const [allJobs, setAllJobs] = useState(false);
     useEffect(() => {
@@ -9,7 +9,7 @@ const Jobs = ({setJobDetails}) => {
             .then(res => res.json())
             .then(data => setJobs(data))
     }, [])
-    console.log(setAllJobs)
+    
     return (
         <div className="max-w-screen-xl mx-auto">
             <div className="text-center space-y-4">
@@ -19,12 +19,12 @@ const Jobs = ({setJobDetails}) => {
 
             {allJobs ? <div className="mt-8 grid gap-6 grid-cols-1 lg:grid-cols-2">
                 {
-                    Jobs.map(job => <Job key={job.id} setJobDetails={setJobDetails} job={job}></Job>)
+                    Jobs.map(job => <Job key={job.id} handleJobDetails={handleJobDetails} setJobDetails={setJobDetails} job={job}></Job>)
                 }
             </div>
                 : <div className="mt-8 grid gap-6 grid-cols-1 lg:grid-cols-2">
                     {
-                        Jobs.slice(0, 4).map(job => <Job key={job.id} setJobDetails={setJobDetails} job={job}></Job>)
+                        Jobs.slice(0, 4).map(job => <Job key={job.id} handleJobDetails={handleJobDetails} setJobDetails={setJobDetails} job={job}></Job>)
                     }
                 </div>}
 
