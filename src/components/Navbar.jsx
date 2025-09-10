@@ -16,14 +16,14 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><Link to="/applied jobs">Applied Jobs</Link></li>
+                            <li><Link to="/applied-jobs">Applied Jobs</Link></li>
                         </ul>
                     </div>
                     <a href='/' className="font-extrabold text-3xl">CareerHub</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a href="#" className="font-medium" >Applied Jobs</a></li>
+                        <li><Link to='/applied-jobs'  className="font-medium" >Applied Jobs</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

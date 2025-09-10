@@ -27,4 +27,4 @@ const saveToLS = (job) => {
     }
 
 }
-export { saveToLS }
+export { saveToLS,getStoredJobs }

@@ -1,11 +1,11 @@
 import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineAttachMoney } from "react-icons/md";
 
-const Job = ({ job, setJobDetails,handleJobDetails }) => {
-    const { logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = job;
+const Job = ({ job, setJobDetails,handleJobDetails}) => {
+    const { logo, job_title, company_name, remote_or_onsite, job_type, location, salary} = job;
+    // console.log(appliedJobs)
     
     return (
-
         <div className="card bg-base-100 card-lg shadow-sm">
             <div className="p-6 space-y-2">
                 <img className="max-w-[120px]" src={logo} alt="" />

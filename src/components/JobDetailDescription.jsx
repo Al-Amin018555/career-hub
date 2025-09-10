@@ -6,7 +6,7 @@ import Address from '../assets/icons/location2.png';
 import { saveToLS } from '../Utility';
 
 const JobDetailDescription = ({job}) => {
-     const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information,id } = job;
+     const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information} = job;
 
      const handleApplyNow = (job) => {
        saveToLS(job)
