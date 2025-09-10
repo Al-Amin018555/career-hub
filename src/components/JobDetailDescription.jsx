@@ -3,8 +3,14 @@ import Title from '../assets/icons/calendar.png';
 import Phone from '../assets/icons/phone.png';
 import Email from '../assets/icons/email.png';
 import Address from '../assets/icons/location2.png';
+import { saveToLS } from '../Utility';
+
 const JobDetailDescription = ({job}) => {
-     const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information } = job;
+     const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information,id } = job;
+
+     const handleApplyNow = (job) => {
+       saveToLS(job)
+     }
 
     return (
         <div>
@@ -59,7 +65,7 @@ const JobDetailDescription = ({job}) => {
                         </div>
                     </div>
                     <div>
-                        <button className="btn mt-6 w-full py-7 rounded-lg text-xl text-white bg-gradient-to-r from-blue-500 to-purple-500">Apply Now</button>
+                        <button onClick={() => handleApplyNow(job) } className="btn mt-6 w-full py-7 rounded-lg text-xl text-white bg-gradient-to-r from-blue-500 to-purple-500">Apply Now</button>
                     </div>
 
                 </div>
